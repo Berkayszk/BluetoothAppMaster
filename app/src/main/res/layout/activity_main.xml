@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/bluetoothStatusTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        />
+
+    <ImageView
+        android:id="@+id/bluetoothIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_bluetooth_on"
+        />
+
+    <Button
+        android:id="@+id/bluetoothOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#18D820"
+        android:text="Turn On "
+        android:minWidth="200dp" />
+    <Button
+        android:id="@+id/bluetoothOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#18D820"
+        android:text="Turn Off "
+        android:minWidth="200dp"></Button>
+    <Button
+        android:id="@+id/bluetoothDiscoverable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#18D820"
+        android:text="Discoverable"
+        android:minWidth="200dp"></Button>
+    <Button
+        android:id="@+id/bluetoothPaired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#18D820"
+        android:text="Get Paired Devices"
+        android:minWidth="200dp"></Button>
+    <TextView
+        android:id="@+id/pairedTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>
